@@ -11,10 +11,12 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService{
     @Autowired
     StudentRepository stdrepo; //creating object
+    
     @Override
     public Student poststudent(Student st){
         return stdrepo.save(st);  //positing(saving) student details
     }
+
     @Override
     public Student getallstudent(){
         return stdrepo.findAll(); 
