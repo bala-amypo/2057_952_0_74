@@ -11,7 +11,7 @@ public class StudentController{
     StudentService stdser;
     @PostMapping("/addStudent")
     public Student addStudent(@RequestBody Student st){
-        return stdrepo.poststudent(st);
+        return stdser.poststudent(st);
     }
 
 
