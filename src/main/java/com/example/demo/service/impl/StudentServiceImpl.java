@@ -17,6 +17,6 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public Student getallstudent(Student st){
-        return stdrepo.findAll
+        return stdrepo.findAll(st); 
     }
 }
