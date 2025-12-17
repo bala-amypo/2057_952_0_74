@@ -14,7 +14,7 @@ public class StudentController{
         return stdser.poststudent(st);
     }
     @GetMapping("/getall")
-    public Student getallstudent(){
+    public List<Student> getallstudent(){
         return stdser.getallstudent();
     }
 
