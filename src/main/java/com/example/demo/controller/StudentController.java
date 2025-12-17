@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.*;
 
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
+import java.util.List;
+
 @RestController
 public class StudentController{
     @Autowired
@@ -17,5 +19,5 @@ public class StudentController{
     public List<Student> getallstudent(){
         return stdser.getallstudent();
     }
-
+    
 }
